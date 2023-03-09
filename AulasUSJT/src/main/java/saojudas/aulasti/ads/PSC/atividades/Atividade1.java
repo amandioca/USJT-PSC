@@ -48,4 +48,17 @@ public class Atividade1 {
 
     }
 
+    /**
+     * c) Faça um programa que lê o salário atual de alguém e exibe o novo
+     * salário que é o atual com 25% de aumento.
+     *
+     * @since 2023/03/09
+     */
+    public void exerc3() {
+        double salario = Double.parseDouble(JOptionPane.showInputDialog(null, "Qual é o valor bruto atual do seu salário?", "Aumento Salarial", JOptionPane.INFORMATION_MESSAGE));
+
+        JOptionPane.showMessageDialog(null, "Com o aumento de 25% seu salário passará a ser:\n" + String.format("%.2f", salario *= 1.25), "Aumento Salarial", JOptionPane.INFORMATION_MESSAGE);
+
+    }
+
 }
