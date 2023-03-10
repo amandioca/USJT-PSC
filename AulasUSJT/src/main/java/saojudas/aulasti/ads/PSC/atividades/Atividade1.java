@@ -99,10 +99,30 @@ public class Atividade1 {
         b = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o valor da base:", "Área do Retângulo", JOptionPane.INFORMATION_MESSAGE));
         h = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o valor da altura:", "Área do Retângulo", JOptionPane.INFORMATION_MESSAGE));
 
-        JOptionPane.showMessageDialog(null, "Fórmula: A = b / h "
+        JOptionPane.showMessageDialog(null, "Fórmula: A = b * h "
                 + "\n\nA = " + b + " x " + h
                 + "\nA = " + (b * h),
                 "Área do Retângulo", JOptionPane.INFORMATION_MESSAGE
+        );
+
+    }   
+    
+        /**
+        * f) Faça um programa que exibe a área de um triângulo a partir da base e
+     * da altura fornecidas pelo usuário.
+     *
+     * @since 2023/03/10
+     */
+    public void exerc6() {
+        int b, h;
+
+        b = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o valor da base:", "Área do Triângulo", JOptionPane.INFORMATION_MESSAGE));
+        h = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o valor da altura:", "Área do Triângulo", JOptionPane.INFORMATION_MESSAGE));
+
+        JOptionPane.showMessageDialog(null, "Fórmula: A = b * h / 2 "
+                + "\n\nA = " + b + " x " + h + " / 2"
+                + "\nA = " + (b * h / 2),
+                "Área do Triângulo", JOptionPane.INFORMATION_MESSAGE
         );
 
     }
