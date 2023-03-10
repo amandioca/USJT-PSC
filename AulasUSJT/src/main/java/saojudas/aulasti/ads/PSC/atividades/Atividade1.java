@@ -74,16 +74,17 @@ public class Atividade1 {
      */
     public void exerc4() {
         double salario, gratificacao, impostos;
-        salario = Double.parseDouble(JOptionPane.showInputDialog(null, "Qual é o valor bruto atual do seu salário?", "Aumento Salarial", JOptionPane.INFORMATION_MESSAGE));
-        
-        gratificacao =  (5 * salario)/100;
-        impostos = (3 * salario)/100;
-        
+        salario = Double.parseDouble(JOptionPane.showInputDialog(null, "Qual é o valor bruto atual do seu salário?", "Cálculo de Pagamento", JOptionPane.INFORMATION_MESSAGE));
+
+        gratificacao = (5 * salario) / 100;
+        impostos = (7 * salario) / 100;
+
         JOptionPane.showMessageDialog(null, "Salario base: R$" + String.format("%.2f", salario)
-                + "\nGratificação: R$" + String.format("%.2f", gratificacao) 
+                + "\nGratificação: R$" + String.format("%.2f", gratificacao)
                 + "\nImpostos: R$" + String.format("%.2f", impostos)
-                + "\n\nTotal a receber: R$" + String.format("%.2f",(salario + gratificacao) - impostos),
-                 "Aumento Salarial", JOptionPane.INFORMATION_MESSAGE);
+                + "\n\nTotal a receber: R$" + String.format("%.2f", (salario + gratificacao) - impostos),
+                "Cálculo de Pagamento", JOptionPane.INFORMATION_MESSAGE);
 
     }
+
 }
