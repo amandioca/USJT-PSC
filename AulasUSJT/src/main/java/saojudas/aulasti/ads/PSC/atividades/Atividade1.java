@@ -57,8 +57,33 @@ public class Atividade1 {
     public void exerc3() {
         double salario = Double.parseDouble(JOptionPane.showInputDialog(null, "Qual é o valor bruto atual do seu salário?", "Aumento Salarial", JOptionPane.INFORMATION_MESSAGE));
 
-        JOptionPane.showMessageDialog(null, "Com o aumento de 25% seu salário passará a ser:\n" + String.format("%.2f", salario *= 1.25), "Aumento Salarial", JOptionPane.INFORMATION_MESSAGE);
+        // Aumento de 25%
+        // 25 / 100 = 0.25
+        // 1 + 0.25 = 1.25
+        JOptionPane.showMessageDialog(null, "Com o aumento de 25% seu salário passará a ser:\nR$" + String.format("%.2f", salario *= 1.25), "Aumento Salarial", JOptionPane.INFORMATION_MESSAGE);
 
     }
 
+    /**
+     * d) Faça um programa que lê o salário base de alguém e exibe o novo
+     * salário, considerando 5% de gratificação(mais dinheiro) e 7% de
+     * impostos(menos dinheiro)sobre o salário base. Também exiba a gratificação
+     * e o imposto.
+     *
+     * @since 2023/03/09
+     */
+    public void exerc4() {
+        double salario, gratificacao, impostos;
+        salario = Double.parseDouble(JOptionPane.showInputDialog(null, "Qual é o valor bruto atual do seu salário?", "Aumento Salarial", JOptionPane.INFORMATION_MESSAGE));
+        
+        gratificacao =  (5 * salario)/100;
+        impostos = (3 * salario)/100;
+        
+        JOptionPane.showMessageDialog(null, "Salario base: R$" + String.format("%.2f", salario)
+                + "\nGratificação: R$" + String.format("%.2f", gratificacao) 
+                + "\nImpostos: R$" + String.format("%.2f", impostos)
+                + "\n\nTotal a receber: R$" + String.format("%.2f",(salario + gratificacao) - impostos),
+                 "Aumento Salarial", JOptionPane.INFORMATION_MESSAGE);
+
+    }
 }
