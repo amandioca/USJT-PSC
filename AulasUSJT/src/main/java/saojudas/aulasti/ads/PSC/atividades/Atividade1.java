@@ -105,10 +105,10 @@ public class Atividade1 {
                 "Área do Retângulo", JOptionPane.INFORMATION_MESSAGE
         );
 
-    }   
-    
-        /**
-        * f) Faça um programa que exibe a área de um triângulo a partir da base e
+    }
+
+    /**
+     * f) Faça um programa que exibe a área de um triângulo a partir da base e
      * da altura fornecidas pelo usuário.
      *
      * @since 2023/03/10
@@ -123,6 +123,28 @@ public class Atividade1 {
                 + "\n\nA = " + b + " x " + h + " / 2"
                 + "\nA = " + (b * h / 2),
                 "Área do Triângulo", JOptionPane.INFORMATION_MESSAGE
+        );
+
+    }
+
+    /**
+     * g) Faça um programa que exibe a área de um círculo a partir da base e da
+     * altura fornecidas pelo usuário.
+     *
+     * @since 2023/03/10
+     */
+    public void exerc7() {
+        double p, raio;
+
+        p = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o valor do perímetro ou circunferência do círculo:", "Área do Círculo", JOptionPane.INFORMATION_MESSAGE));
+
+        //  P = (2 * Math.PI) * raio;
+        raio = p / (2 * Math.PI);
+
+        JOptionPane.showMessageDialog(null, "Fórmula: A = π * r ^ 2 "
+                + "\n\nA = π * " + String.format("%.2f", (raio = p / (2 * Math.PI))) + " ^ 2"
+                + "\nA = " + String.format("%.2f", 3.14 * raio * raio),
+                "Área do Círculo", JOptionPane.INFORMATION_MESSAGE
         );
 
     }
