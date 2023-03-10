@@ -149,4 +149,23 @@ public class Atividade1 {
 
     }
 
+    /**
+     * h) Faça um programa que exibe quantos litros de combustível são gastos
+     * por um carro em um dado percurso. Serão fornecidos pelo usuário a
+     * distância percorrida em km e a quantidade de listros gastos por km.
+     *
+     * @since 2023/03/10
+     */
+    public void exerc8() {
+        double percurso, litroKm;
+
+        percurso = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe a distância do percurso:", "Litros Gastos", JOptionPane.INFORMATION_MESSAGE));
+        litroKm = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe quantos litros são gastos por KM:", "Litros Gastos", JOptionPane.INFORMATION_MESSAGE));
+
+        JOptionPane.showMessageDialog(null, "O total de litros gastos no percurso:\n" + (percurso * litroKm),
+                "Litros Gastos", JOptionPane.INFORMATION_MESSAGE
+        );
+
+    }
+
 }
