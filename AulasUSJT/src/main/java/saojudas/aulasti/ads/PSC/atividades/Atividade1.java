@@ -87,4 +87,24 @@ public class Atividade1 {
 
     }
 
+    /**
+     * e) Faça um programa que exibe a área de um retângulo a partir da base e
+     * da altura fornecidas pelo usuário.
+     *
+     * @since 2023/03/09
+     */
+    public void exerc5() {
+        int b, h;
+
+        b = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o valor da base:", "Área do Retângulo", JOptionPane.INFORMATION_MESSAGE));
+        h = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o valor da altura:", "Área do Retângulo", JOptionPane.INFORMATION_MESSAGE));
+
+        JOptionPane.showMessageDialog(null, "Fórmula: A = b / h "
+                + "\n\nA = " + b + " x " + h
+                + "\nA = " + (b * h),
+                "Área do Retângulo", JOptionPane.INFORMATION_MESSAGE
+        );
+
+    }
+
 }
