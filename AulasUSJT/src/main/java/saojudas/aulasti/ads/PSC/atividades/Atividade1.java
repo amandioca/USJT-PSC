@@ -178,7 +178,6 @@ public class Atividade1 {
      */
     public void exerc9() {
         LocalDate hoje = LocalDate.now();
-
         int idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Qual sua idade atual?", "Minha Idade em 2100", JOptionPane.INFORMATION_MESSAGE));
 
         JOptionPane.showMessageDialog(null, "Sua idade na virada do século será:\n" + (2100 - hoje.getYear() + idade),
@@ -223,6 +222,23 @@ public class Atividade1 {
         JOptionPane.showMessageDialog(null, "Comissão: R$" + String.format("%.2f", (4 * totalVendas) / 100)
                 + "\nTotal a receber: R$" + String.format("%.2f", salario + ((4 * totalVendas) / 100)),
                 "Comissão", JOptionPane.INFORMATION_MESSAGE);
+
+    }
+
+    /**
+     * l) Faça um programa que recebe o ano de nascimento de uma pessoa e o ano
+     * atual, e exibe a idade dessa pessoa em anos.
+     *
+     * @since 2023/03/11
+     */
+    public void exerc12() {
+        LocalDate hoje = LocalDate.now();
+        int anoNasc;
+
+        anoNasc = Integer.parseInt(JOptionPane.showInputDialog(null, "Em qual ano você nasceu?", "Idade Atual", JOptionPane.INFORMATION_MESSAGE));
+
+        JOptionPane.showMessageDialog(null, "Sua idade atual possivelmente é: " + (hoje.getYear() - anoNasc),
+                "Idade Atual", JOptionPane.INFORMATION_MESSAGE);
 
     }
 
