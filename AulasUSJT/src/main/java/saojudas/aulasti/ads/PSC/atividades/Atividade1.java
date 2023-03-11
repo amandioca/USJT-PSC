@@ -1,5 +1,7 @@
 package saojudas.aulasti.ads.PSC.atividades;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import javax.swing.JOptionPane;
 
 /**
@@ -136,7 +138,7 @@ public class Atividade1 {
     public void exerc7() {
         double p, raio;
 
-        p = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o valor do perímetro ou circunferência do círculo:", "Área do Círculo", JOptionPane.INFORMATION_MESSAGE));
+        p = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o valor do perímetro ou circunferência do círculo:", "Área do Círculo", JOptionPane.INFORMATION_MESSAGE));
 
         //  P = (2 * Math.PI) * raio;
         raio = p / (2 * Math.PI);
@@ -164,6 +166,23 @@ public class Atividade1 {
 
         JOptionPane.showMessageDialog(null, "O total de litros gastos no percurso:\n" + (percurso * litroKm),
                 "Litros Gastos", JOptionPane.INFORMATION_MESSAGE
+        );
+
+    }
+
+    /**
+     * i) Faça um programa que a partir da idade atual e o ano atual, calcule e
+     * exiba a idade que a pessoa teria na virada do próximo século.
+     *
+     * @since 2023/03/10
+     */
+    public void exerc9() {
+        LocalDate hoje = LocalDate.now();
+
+        int idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Qual sua idade atual?", "Minha Idade em 2100", JOptionPane.INFORMATION_MESSAGE));
+
+        JOptionPane.showMessageDialog(null, "Sua idade na virada do século será:\n" + (2100 - hoje.getYear() + idade),
+                "Minha Idade em 2100", JOptionPane.INFORMATION_MESSAGE
         );
 
     }
