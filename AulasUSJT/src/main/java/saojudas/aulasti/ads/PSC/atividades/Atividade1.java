@@ -187,4 +187,24 @@ public class Atividade1 {
 
     }
 
+    /**
+     * j) Faça um programa que recebe duas notas e exibe a média ponderada
+     * dessas notas, considerando peso dois para a primeira e peso três para a
+     * segunda.
+     *
+     * @since 2023/03/10
+     */
+    public void exerc10() {
+        double nota1, nota2;
+
+        nota1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Insira a primeira nota", "Primeira Nota", JOptionPane.INFORMATION_MESSAGE));
+        nota2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Insira a segunda nota:", "Segunda Nota", JOptionPane.INFORMATION_MESSAGE));
+
+        JOptionPane.showMessageDialog(null, "Nota 1, peso 2: " + nota1
+                + "\nNota 2, peso 3: " + nota2
+                + "\n\nMédia: " + ((nota1 * 2 + nota2 * 3) / 5),
+                "Média Ponderada", JOptionPane.INFORMATION_MESSAGE);
+
+    }
+
 }
