@@ -174,7 +174,7 @@ public class Atividade1 {
      * i) Faça um programa que a partir da idade atual e o ano atual, calcule e
      * exiba a idade que a pessoa teria na virada do próximo século.
      *
-     * @since 2023/03/10
+     * @since 2023/03/11
      */
     public void exerc9() {
         LocalDate hoje = LocalDate.now();
@@ -192,7 +192,7 @@ public class Atividade1 {
      * dessas notas, considerando peso dois para a primeira e peso três para a
      * segunda.
      *
-     * @since 2023/03/10
+     * @since 2023/03/11
      */
     public void exerc10() {
         double nota1, nota2;
@@ -204,6 +204,25 @@ public class Atividade1 {
                 + "\nNota 2, peso 3: " + nota2
                 + "\n\nMédia: " + ((nota1 * 2 + nota2 * 3) / 5),
                 "Média Ponderada", JOptionPane.INFORMATION_MESSAGE);
+
+    }
+
+    /**
+     * k) Um funcionário recebe um salário fixo acrescido de 4% de comissão
+     * sobre suas vendas. Faça um programa que recebe o salário fixo e a soma de
+     * tudo que ele vendeu, e mostre a comissão e o salário final do
+     * funcionário.
+     *
+     * @since 2023/03/11
+     */
+    public void exerc11() {
+        double salario, totalVendas;
+        salario = Double.parseDouble(JOptionPane.showInputDialog(null, "Qual é o valor do seu salário?", "Comissão", JOptionPane.INFORMATION_MESSAGE));
+        totalVendas = Double.parseDouble(JOptionPane.showInputDialog(null, "Qual valor total das suas vendas esse mês?", "Comissão", JOptionPane.INFORMATION_MESSAGE));
+
+        JOptionPane.showMessageDialog(null, "Comissão: R$" + String.format("%.2f", (4 * totalVendas) / 100)
+                + "\nTotal a receber: R$" + String.format("%.2f", salario + ((4 * totalVendas) / 100)),
+                "Comissão", JOptionPane.INFORMATION_MESSAGE);
 
     }
 

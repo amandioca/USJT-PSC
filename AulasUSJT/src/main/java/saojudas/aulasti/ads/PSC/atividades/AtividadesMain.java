@@ -12,7 +12,7 @@ public class AtividadesMain {
 
         Atividade1 atividade1 = new Atividade1();
 
-        atividade1.exerc10();
+        atividade1.exerc11();
 
     }
 
